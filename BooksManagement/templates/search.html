@@ -1,0 +1,80 @@
+
+<html>
+<head>
+  <title>Search</title>
+  <style>
+  body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #D03237;
+  font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+    float: right;
+    background-color: #D03237;
+    color: white;
+    padding: 6px 10px;
+    width: 120px;
+    border: none;
+    margin-top: 1px;
+    margin-right: 8px;
+    font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: white solid 2px;
+    transition: 0.3s;
+}
+
+.searchbar::placeholder {
+    color: white;
+    font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    /* transition: 0.2s; */
+}
+
+.searchbar:focus {
+    width: 400px;
+    font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.3s;
+    /* Stops the input box from inheriting the styling from the inputs on the request form */
+    border-bottom: white solid 2px;
+    outline: none;
+}
+
+.btn-search {
+    cursor: pointer;
+    color: white;
+     background-color: #D03237;
+    text-decoration: none !important;
+    font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 25px;
+    padding-top: 5px;
+    margin-right: 40px;
+}
+  </style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <input id="searchBar" class="searchbar" type="text" placeholder="Search...">
+  <button type = "button" class ="btn-search" id ="btn-search">Search</button>
+</div>
+<script src="static/search_result.js">
+</script>
+</body>
+</html>
+
